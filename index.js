@@ -272,6 +272,10 @@ document.addEventListener('DOMContentLoaded', () => {
         customCursor.style.opacity = '0';
         cursorFollower.style.opacity = '0';
 
+        let lastX = 0;
+        let lastY = 0;
+        let lastTime = Date.now();
+
         window.addEventListener('mousemove', (e) => {
             // Make cursors visible on first move
             customCursor.style.opacity = '1';
@@ -287,6 +291,68 @@ document.addEventListener('DOMContentLoaded', () => {
             if (mouseGlow) {
                 mouseGlow.style.opacity = '1';
                 mouseGlow.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`;
+                
+                // Calculate velocity to splash scale the backlight!
+                const now = Date.now();
+                const dt = now - lastTime;
+                if (dt > 15) {
+                    const dx = e.clientX - lastX;
+                    const dy = e.clientY - lastY;
+                    const speed = Math.sqrt(dx * dx + dy * dy) / dt;
+                    
+                    // Base size 250px up to 420px splash on high velocity
+                    const size = Math.min(250 + speed * 120, 420);
+                    mouseGlow.style.width = `${size}px`;
+                    mouseGlow.style.height = `${size}px`;
+                    
+                    lastX = e.clientX;
+                    lastY = e.clientY;
+                    lastTime = now;
+                }
+            }
+        });
+
+        window.addEventListener('click', (e) => {
+            // Spreading circle ripple effect
+            cursorFollower.classList.add('clicked');
+            setTimeout(() => {
+                cursorFollower.classList.remove('clicked');
+            }, 400);
+
+            // Fireworks spark burst (8 particles flying out)
+            for (let i = 0; i < 8; i++) {
+                const spark = document.createElement('div');
+                spark.className = 'click-spark';
+                
+                // Even distribution around the click point with slight randomness
+                const angle = (i / 8) * Math.PI * 2 + (Math.random() - 0.5) * 0.4;
+                const distance = 30 + Math.random() * 45;
+                const tx = Math.cos(angle) * distance;
+                const ty = Math.sin(angle) * distance;
+                
+                spark.style.setProperty('--tx', `${tx}px`);
+                spark.style.setProperty('--ty', `${ty}px`);
+                spark.style.left = `${e.clientX}px`;
+                spark.style.top = `${e.clientY}px`;
+                
+                document.body.appendChild(spark);
+                
+                // Remove the element after animation ends
+                setTimeout(() => {
+                    spark.remove();
+                }, 500);
+            }
+
+            // Backlight click splash flash!
+            if (mouseGlow) {
+                mouseGlow.style.width = '550px';
+                mouseGlow.style.height = '550px';
+                mouseGlow.style.opacity = '0.95';
+                setTimeout(() => {
+                    mouseGlow.style.width = '250px';
+                    mouseGlow.style.height = '250px';
+                    mouseGlow.style.opacity = '1';
+                }, 300);
             }
         });
         
@@ -365,7 +431,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <span class="term-highlight">projects</span> - Showcase of retail & IoT projects
   <span class="term-highlight">contact</span>  - Email, Phone and social coordinates
   <span class="term-highlight">clear</span>    - Clear terminal logs
-  <span class="term-highlight">print</span>    - Open printable PDF Resume view`,
+  <span class="term-highlight">print</span>    - Download PDF Resume`,
             
             about: `Athil Hisham - Software Developer
 B.Tech Graduate in Computer Science & Engineering.
@@ -388,8 +454,7 @@ Specialized in writing clean Python APIs, backend systems, full-stack Angular ap
   • GitHub: github.com/OxxY-ScoobY
   • LinkedIn: linkedin.com/in/athil-hisham`,
             
-            print: `Opening printable view...
-Press Ctrl+P / Cmd+P to save as PDF if your print dialog doesn't load automatically.`
+            print: `Downloading PDF Resume...`
         };
 
         const processCommand = (cmdText) => {
@@ -404,7 +469,12 @@ Press Ctrl+P / Cmd+P to save as PDF if your print dialog doesn't load automatica
             }
 
             if (cleanCmd === 'print') {
-                setTimeout(() => { window.print(); }, 500);
+                setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.href = 'Athil_Hisham_Resume.pdf';
+                    link.download = 'Athil_Hisham_Resume.pdf';
+                    link.click();
+                }, 500);
             }
 
             if (commands.hasOwnProperty(cleanCmd)) {

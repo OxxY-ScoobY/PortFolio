@@ -73,6 +73,10 @@
                     and backend web applications using Python, Flask, FastAPI, and Angular. Specializing in building
                     scalable REST APIs, integrating IoT, and deploying computer vision solutions.
                 </p>
+                <div class="print-only-contact">
+                    +91 8943544897 &nbsp;|&nbsp; athilhishamcym@gmail.com &nbsp;|&nbsp; Wayanad, Kerala &nbsp;|&nbsp;
+                    linkedin.com/in/athil-hisham &nbsp;|&nbsp; github.com/OxxY-ScoobY
+                </div>
                 <div class="hero-ctas">
                     <a href="#projects" class="btn btn-primary">
                         <span>View Projects</span>
@@ -82,7 +86,8 @@
                             <polyline points="12 5 19 12 12 19"></polyline>
                         </svg>
                     </a>
-                    <button class="btn btn-secondary cv-download-btn" onclick="window.print()">
+                    <a href="Athil_Hisham_Resume.pdf" download="Athil_Hisham_Resume.pdf"
+                        class="btn btn-secondary cv-download-btn">
                         <span>Download CV</span>
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -90,7 +95,7 @@
                             <polyline points="7 10 12 15 17 10"></polyline>
                             <line x1="12" y1="15" x2="12" y2="3"></line>
                         </svg>
-                    </button>
+                    </a>
                     <a href="#contact" class="btn btn-secondary">Contact Me</a>
                 </div>
                 <div class="hero-socials">
@@ -142,572 +147,754 @@
                         <div class="terminal-title">guest@athilhisham: ~</div>
                     </div>
                     <div class="terminal-body" id="terminalBody">
-                        <div class="terminal-line welcome-txt">Welcome to Athil Hisham's interactive terminal portfolio!</div>
-                        <div class="terminal-line welcome-sub">Type <span class="term-highlight">help</span> to list available commands.</div>
+                        <div class="terminal-line welcome-txt">Welcome to Athil Hisham's interactive terminal portfolio!
+                        </div>
+                        <div class="terminal-line welcome-sub">Type <span class="term-highlight">help</span> to list
+                            available commands.</div>
                         <div class="terminal-output-container" id="terminalOutput"></div>
                         <div class="terminal-prompt-line">
                             <span class="terminal-prompt">guest@athilhisham:~$</span>
-                            <span class="terminal-input" id="terminalInput" contenteditable="true" spellcheck="false"></span>
+                            <span class="terminal-input" id="terminalInput" contenteditable="true"
+                                spellcheck="false"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about-section scroll-reveal">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <div class="section-divider"></div>
-            </div>
+        <!-- Print Layout Container to format double column resume -->
+        <div class="print-layout-wrapper">
 
-            <div class="about-grid">
-                <div class="about-info">
-                    <h3 class="about-subtitle">Professional Summary</h3>
-                    <p class="about-text">
-                        I am a dedicated Computer Science & Engineering graduate (2026) with a passion for designing and
-                        implementing full-stack software solutions. My experience ranges from crafting responsive client
-                        interfaces to architecting high-performance backend pipelines, working extensively with
-                        frameworks like <strong>FastAPI</strong>, <strong>Flask</strong>, and <strong>Angular</strong>.
-                    </p>
-                    <p class="about-text">
-                        I enjoy working at the intersection of web technology and the physical world—having successfully
-                        implemented IoT systems powered by Raspberry Pi, loaded with Computer Vision models (YOLOv8) and
-                        weight sensors to automate supermarket shopping workflows.
-                    </p>
-
-                    <div class="languages-box">
-                        <span class="languages-title">Languages:</span>
-                        <div class="languages-list">
-                            <span class="lang-badge">English (Professional)</span>
-                            <span class="lang-badge">Malayalam (Native)</span>
-                            <span class="lang-badge">Hindi (Conversational)</span>
-                        </div>
-                    </div>
+            <!-- About Section (Summary) -->
+            <section id="about" class="about-section scroll-reveal">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
                 </div>
 
-                <div class="education-container">
-                    <h3 class="about-subtitle">Education</h3>
-                    <div class="education-timeline">
-                        <div class="edu-card scroll-reveal-item">
-                            <div class="edu-dot"></div>
-                            <div class="edu-header">
-                                <span class="edu-duration">2022 - 2026</span>
-                                <h4 class="edu-degree">B.Tech in Computer Science and Engineering</h4>
-                            </div>
-                            <p class="edu-school">Ilahia College of Engineering and Technology</p>
-                            <p class="edu-score">CGPA: 7.25 / 10</p>
-                            <div class="edu-coursework">
-                                <strong>Coursework:</strong> Data Structures & Algorithms, OOP, Operating Systems,
-                                Computer Networks, Artificial Intelligence, Embedded Systems, Web Programming
-                            </div>
-                        </div>
-
-                        <div class="edu-card scroll-reveal-item">
-                            <div class="edu-dot"></div>
-                            <div class="edu-header">
-                                <span class="edu-duration">2020 - 2022</span>
-                                <h4 class="edu-degree">Higher Secondary School (XII)</h4>
-                            </div>
-                            <p class="edu-school">VIJAYA HSS, Pulpally</p>
-                            <p class="edu-score">Score: 76%</p>
-                        </div>
-
-                        <div class="edu-card scroll-reveal-item">
-                            <div class="edu-dot"></div>
-                            <div class="edu-header">
-                                <span class="edu-duration">2020</span>
-                                <h4 class="edu-degree">Secondary Education (X)</h4>
-                            </div>
-                            <p class="edu-school">VIJAYA HSS, Pulpally</p>
-                            <p class="edu-score">Score: 94%</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Skills Section -->
-        <section id="skills" class="skills-section scroll-reveal">
-            <div class="section-header">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="section-divider"></div>
-            </div>
-
-            <div class="skills-marquee-container scroll-reveal-item">
-                <!-- Row 1: Left scrolling -->
-                <div class="skills-marquee-wrapper">
-                    <div class="skills-marquee-track">
-                        <!-- Card 1: Python -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#3776AB"><path d="M14.25.18c.9.2 1.66.76 2 1.56.4.85.38 1.8.38 2.76h-.85c-.9 0-1.62.73-1.62 1.62v1.54h3.1c1.02 0 1.9.7 2.1 1.7.27 1.34.2 2.74.2 4.1 0 1-.07 2-.72 2.8-.7.84-1.8.84-2.8.84h-1.34v-1.9c0-.9-.72-1.62-1.62-1.62H9.7v-2.7h4.1V9.7H9.7c-1 0-1.9-.7-2.1-1.7-.27-1.34-.2-2.74-.2-4.1 0-1 .07-2 .72-2.8C8.8.27 9.87.27 10.9.27h3.35zM9.7 14.3v2.7h4.1c1 0 1.9.7 2.1 1.7.27 1.34.2 2.74.2 4.1 0 1-.07 2-.72 2.8-.7.84-1.8.84-2.8.84h-3.3c-.9-.2-1.66-.76-2-1.56-.4-.85-.38-1.8-.38-2.76h.85c.9 0 1.62-.73 1.62-1.62v-1.54h-3.1c-1.02 0-1.9-.7-2.1-1.7-.27-1.34-.2-2.74-.2-4.1 0-1 .07-2 .72-2.8.7-.84 1.8-.84 2.8-.84H9.7z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">Python</span>
-                        </div>
-                        <!-- Card 2: Angular -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#dd0031"><path d="M12 2L2 5.5l1.5 13L12 22l8.5-3.5 1.5-13L12 2zM12 5l6.5 11.5h-2.2L12 9.7l-4.3 6.8H5.5L12 5z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">Angular</span>
-                        </div>
-                        <!-- Card 3: MongoDB -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#47A248"><path d="M12 2C11.5 4.5 9 8.5 9 12c0 2.5 1.5 5.5 3 7 1.5-1.5 3-4.5 3-7 0-3.5-2.5-7.5-3-10z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">MongoDB Atlas</span>
-                        </div>
-                        <!-- Card 4: Git -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#F05032"><path d="M20.6 10.4L13.6 3.4c-.8-.8-2-.8-2.8 0L9.4 4.8l2.9 2.9c.7-.2 1.5.1 2.1.7.6.6.8 1.4.6 2.1l2.9 2.9c.7-.2 1.5.1 2.1.7.8.8.8 2 0 2.8s-2 .8-2.8 0c-.6-.6-.8-1.4-.6-2.1L12 12.1v4.3c.2.2.3.5.3.8 0 .8-.5 1.5-1.3 1.7-.8.2-1.7-.3-1.9-1.1-.2-.8.3-1.7 1.1-1.9.3 0 .6 0 .8.2v-4.3l-2.7-2.7-5.9 5.9c-.8.8-.8 2 0 2.8l7 7c.8.8 2 .8 2.8 0l7.8-7.8c.8-.8.8-2 0-2.8z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">Git</span>
-                        </div>
-                        <!-- Card 5: HTML5 -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#E34F26"><path d="M3 2l1.6 17.8L12 22l7.4-2.2L21 2H3zm13.6 6h-6.2v2.4h6l-.5 5.2-3.9 1.1-3.9-1.1-.3-2.7h2.4l.1 1.2 1.7.5 1.7-.5.2-1.7H8.6l-.6-7.3h8.8l-.2 1.4z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">HTML5</span>
-                        </div>
-                        <!-- Card 6: Flask -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#c5c9d4"><path d="M19 19v-4.5c0-.9-.7-1.6-1.6-1.6H15V6c0-1.1-.9-2-2-2h-2c-1.1 0-2 .9-2 2v6.9H6.6c-.9 0-1.6.7-1.6 1.6V19c0 1.1.9 2 2 2h10.4c1.1 0 2-.9 2-2zM12 6h2v6.9h-2V6z" fill="#f3f4f6"/></svg>
-                            </div>
-                            <span class="skill-logo-name">Flask</span>
-                        </div>
-                        <!-- Card 7: OpenCV -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="5" stroke="#E34F26"/><circle cx="7" cy="16" r="5" stroke="#4CAF50"/><circle cx="17" cy="16" r="5" stroke="#2196F3"/></svg>
-                            </div>
-                            <span class="skill-logo-name">OpenCV</span>
-                        </div>
-                        <!-- Card 8: VS Code -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#007ACC"><path d="M19.5 21L12 15l-4.5 4.5L3 18V6l4.5-1.5L12 9l7.5-6L21 4.5v15L19.5 21zM6 9.5v5l3.8-2.5L6 9.5z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">VS Code</span>
-                        </div>
-
-                        <!-- Duplicate items for infinite marquee loop -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#3776AB"><path d="M14.25.18c.9.2 1.66.76 2 1.56.4.85.38 1.8.38 2.76h-.85c-.9 0-1.62.73-1.62 1.62v1.54h3.1c1.02 0 1.9.7 2.1 1.7.27 1.34.2 2.74.2 4.1 0 1-.07 2-.72 2.8-.7.84-1.8.84-2.8.84h-1.34v-1.9c0-.9-.72-1.62-1.62-1.62H9.7v-2.7h4.1V9.7H9.7c-1 0-1.9-.7-2.1-1.7-.27-1.34-.2-2.74-.2-4.1 0-1 .07-2 .72-2.8C8.8.27 9.87.27 10.9.27h3.35zM9.7 14.3v2.7h4.1c1 0 1.9.7 2.1 1.7.27 1.34.2 2.74.2 4.1 0 1-.07 2-.72 2.8-.7.84-1.8.84-2.8.84h-3.3c-.9-.2-1.66-.76-2-1.56-.4-.85-.38-1.8-.38-2.76h.85c.9 0 1.62-.73 1.62-1.62v-1.54h-3.1c-1.02 0-1.9-.7-2.1-1.7-.27-1.34-.2-2.74-.2-4.1 0-1 .07-2 .72-2.8.7-.84 1.8-.84 2.8-.84H9.7z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">Python</span>
-                        </div>
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#dd0031"><path d="M12 2L2 5.5l1.5 13L12 22l8.5-3.5 1.5-13L12 2zM12 5l6.5 11.5h-2.2L12 9.7l-4.3 6.8H5.5L12 5z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">Angular</span>
-                        </div>
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#47A248"><path d="M12 2C11.5 4.5 9 8.5 9 12c0 2.5 1.5 5.5 3 7 1.5-1.5 3-4.5 3-7 0-3.5-2.5-7.5-3-10z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">MongoDB Atlas</span>
-                        </div>
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#F05032"><path d="M20.6 10.4L13.6 3.4c-.8-.8-2-.8-2.8 0L9.4 4.8l2.9 2.9c.7-.2 1.5.1 2.1.7.6.6.8 1.4.6 2.1l2.9 2.9c.7-.2 1.5.1 2.1.7.8.8.8 2 0 2.8s-2 .8-2.8 0c-.6-.6-.8-1.4-.6-2.1L12 12.1v4.3c.2.2.3.5.3.8 0 .8-.5 1.5-1.3 1.7-.8.2-1.7-.3-1.9-1.1-.2-.8.3-1.7 1.1-1.9.3 0 .6 0 .8.2v-4.3l-2.7-2.7-5.9 5.9c-.8.8-.8 2 0 2.8l7 7c.8.8 2 .8 2.8 0l7.8-7.8c.8-.8.8-2 0-2.8z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">Git</span>
-                        </div>
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#E34F26"><path d="M3 2l1.6 17.8L12 22l7.4-2.2L21 2H3zm13.6 6h-6.2v2.4h6l-.5 5.2-3.9 1.1-3.9-1.1-.3-2.7h2.4l.1 1.2 1.7.5 1.7-.5.2-1.7H8.6l-.6-7.3h8.8l-.2 1.4z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">HTML5</span>
-                        </div>
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#c5c9d4"><path d="M19 19v-4.5c0-.9-.7-1.6-1.6-1.6H15V6c0-1.1-.9-2-2-2h-2c-1.1 0-2 .9-2 2v6.9H6.6c-.9 0-1.6.7-1.6 1.6V19c0 1.1.9 2 2 2h10.4c1.1 0 2-.9 2-2zM12 6h2v6.9h-2V6z" fill="#f3f4f6"/></svg>
-                            </div>
-                            <span class="skill-logo-name">Flask</span>
-                        </div>
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="5" stroke="#E34F26"/><circle cx="7" cy="16" r="5" stroke="#4CAF50"/><circle cx="17" cy="16" r="5" stroke="#2196F3"/></svg>
-                            </div>
-                            <span class="skill-logo-name">OpenCV</span>
-                        </div>
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#007ACC"><path d="M19.5 21L12 15l-4.5 4.5L3 18V6l4.5-1.5L12 9l7.5-6L21 4.5v15L19.5 21zM6 9.5v5l3.8-2.5L6 9.5z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">VS Code</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Row 2: Right scrolling -->
-                <div class="skills-marquee-wrapper">
-                    <div class="skills-marquee-track-reverse">
-                        <!-- Card 1: Java -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#5382a1"><path d="M2 18.5c4.5 1.5 9 1.5 13.5 0 2-.5 4-1.5 5.5-3 .5-.5 1-1 1-1.5H3s-.5.5-1 1.5c0 1 0 2.5 0 3zM18 10c0-3.5-3-5.5-5.5-6.5C10 2.5 7 2.5 4.5 3.5 3 4 2 5.5 2 7c0 3.5 3 5.5 5.5 6.5s5.5.5 8-.5c1.5-.5 2.5-1.5 2.5-3z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">Java</span>
-                        </div>
-                        <!-- Card 2: FastAPI -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#009688"><path d="M12 2L2 22h9l1-9h-6L17 2h-5z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">FastAPI</span>
-                        </div>
-                        <!-- Card 3: Firebase -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#FFCA28"><path d="M12 2L3.5 18h17L12 2zm0 4.5l5.5 10.5h-11L12 6.5z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">Firebase</span>
-                        </div>
-                        <!-- Card 4: GitHub -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#f3f4f6"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.8 2.8 1.3 3.5 1a3.4 3.4 0 0 1 1-2.1c-2.7-.3-5.5-1.3-5.5-6a4.7 4.7 0 0 1 1.2-3.2 4.4 4.4 0 0 1 .1-3.2s1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2a4.4 4.4 0 0 1 .1 3.2 4.7 4.7 0 0 1 1.2 3.2c0 4.6-2.8 5.6-5.5 5.9a2.9 2.9 0 0 1 .8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">GitHub</span>
-                        </div>
-                        <!-- Card 5: CSS3 -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#1572B6"><path d="M3 2l1.6 17.8L12 22l7.4-2.2L21 2H3zm13.6 6h-6.2v2.4h6l-.5 5.2-3.9 1.1-3.9-1.1-.3-2.7h2.4l.1 1.2 1.7.5 1.7-.5.2-1.7H8.6l-.6-7.3h8.8l-.2 1.4z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">CSS3</span>
-                        </div>
-                        <!-- Card 6: YOLOv8 -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#FF007F" stroke-width="2.5"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>
-                            </div>
-                            <span class="skill-logo-name">YOLOv8</span>
-                        </div>
-                        <!-- Card 7: Raspberry Pi -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#C51A4A"><path d="M12 2C8.5 2 5.5 4.5 5.5 8c0 1.2.4 2.3 1 3.2-.5.5-1 1-1.3 1.7-.6 1.1-.9 2.4-.9 3.8 0 4.1 3.5 7.3 7.7 7.3s7.7-3.2 7.7-7.3c0-1.4-.3-2.7-.9-3.8-.3-.7-.8-1.2-1.3-1.7.6-.9 1-2 1-3.2 0-3.5-3-6-6.5-6zm0 3c1.9 0 3.5 1.3 3.5 3S13.9 11 12 11s-3.5-1.3-3.5-3 1.6-3 3.5-3z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">Raspberry Pi</span>
-                        </div>
-                        <!-- Card 8: C++ -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#00599C"><path d="M2 12C2 6.5 6.5 2 12 2s10 4.5 10 10-4.5 10-10 10S2 17.5 2 12zm13-1h-2V9h-2v2H9v2h2v2h2v-2h2v-2z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">C / C++</span>
-                        </div>
-
-                        <!-- Duplicate items for infinite marquee loop -->
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#5382a1"><path d="M2 18.5c4.5 1.5 9 1.5 13.5 0 2-.5 4-1.5 5.5-3 .5-.5 1-1 1-1.5H3s-.5.5-1 1.5c0 1 0 2.5 0 3zM18 10c0-3.5-3-5.5-5.5-6.5C10 2.5 7 2.5 4.5 3.5 3 4 2 5.5 2 7c0 3.5 3 5.5 5.5 6.5s5.5.5 8-.5c1.5-.5 2.5-1.5 2.5-3z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">Java</span>
-                        </div>
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#009688"><path d="M12 2L2 22h9l1-9h-6L17 2h-5z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">FastAPI</span>
-                        </div>
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#FFCA28"><path d="M12 2L3.5 18h17L12 2zm0 4.5l5.5 10.5h-11L12 6.5z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">Firebase</span>
-                        </div>
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#f3f4f6"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.8 2.8 1.3 3.5 1a3.4 3.4 0 0 1 1-2.1c-2.7-.3-5.5-1.3-5.5-6a4.7 4.7 0 0 1 1.2-3.2 4.4 4.4 0 0 1 .1-3.2s1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2a4.4 4.4 0 0 1 .1 3.2 4.7 4.7 0 0 1 1.2 3.2c0 4.6-2.8 5.6-5.5 5.9a2.9 2.9 0 0 1 .8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">GitHub</span>
-                        </div>
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#1572B6"><path d="M3 2l1.6 17.8L12 22l7.4-2.2L21 2H3zm13.6 6h-6.2v2.4h6l-.5 5.2-3.9 1.1-3.9-1.1-.3-2.7h2.4l.1 1.2 1.7.5 1.7-.5.2-1.7H8.6l-.6-7.3h8.8l-.2 1.4z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">CSS3</span>
-                        </div>
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#FF007F" stroke-width="2.5"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>
-                            </div>
-                            <span class="skill-logo-name">YOLOv8</span>
-                        </div>
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#C51A4A"><path d="M12 2C8.5 2 5.5 4.5 5.5 8c0 1.2.4 2.3 1 3.2-.5.5-1 1-1.3 1.7-.6 1.1-.9 2.4-.9 3.8 0 4.1 3.5 7.3 7.7 7.3s7.7-3.2 7.7-7.3c0-1.4-.3-2.7-.9-3.8-.3-.7-.8-1.2-1.3-1.7.6-.9 1-2 1-3.2 0-3.5-3-6-6.5-6zm0 3c1.9 0 3.5 1.3 3.5 3S13.9 11 12 11s-3.5-1.3-3.5-3 1.6-3 3.5-3z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">Raspberry Pi</span>
-                        </div>
-                        <div class="skill-logo-card">
-                            <div class="skill-logo-icon">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="#00599C"><path d="M2 12C2 6.5 6.5 2 12 2s10 4.5 10 10-4.5 10-10 10S2 17.5 2 12zm13-1h-2V9h-2v2H9v2h2v2h2v-2h2v-2z"/></svg>
-                            </div>
-                            <span class="skill-logo-name">C / C++</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Work Experience Section -->
-        <section id="experience" class="experience-section scroll-reveal">
-            <div class="section-header">
-                <h2 class="section-title">Work Experience</h2>
-                <div class="section-divider"></div>
-            </div>
-
-            <div class="experience-timeline-container">
-                <div class="exp-timeline-item">
-                    <div class="exp-badge">Internship</div>
-                    <div class="exp-details-card scroll-reveal-item">
-                        <div class="exp-header">
-                            <div>
-                                <h3 class="exp-title">Front-End Development Intern</h3>
-                                <a href="#" class="exp-company">NeST Digital Academy</a>
-                            </div>
-                            <div class="exp-date-loc">
-                                <span class="exp-date">
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                        <line x1="16" y1="2" x2="16" y2="6"></line>
-                                        <line x1="8" y1="2" x2="8" y2="6"></line>
-                                        <line x1="3" y1="10" x2="21" y2="10"></line>
-                                    </svg>
-                                    Mar 2025 – Apr 2025
-                                </span>
-                                <span class="exp-loc">
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                    </svg>
-                                    Kochi, Kerala
-                                </span>
-                            </div>
-                        </div>
-                        <ul class="exp-bullets">
-                            <li>Developed responsive, component-based web interfaces using HTML5, CSS3, JavaScript, and
-                                Angular, applying data binding and modular architecture patterns.</li>
-                            <li>Practiced collaborative version control with Git and GitHub in a multi-developer team
-                                environment, successfully resolving merge conflicts and maintaining clean commit
-                                histories.</li>
-                            <li>Gained practical exposure to Agile software development workflows, sprint planning, and
-                                professional software delivery standards.</li>
-                        </ul>
-                        <div class="exp-tech-tags">
-                            <span class="tech-tag">Angular</span>
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Git & GitHub</span>
-                            <span class="tech-tag">Agile Workflows</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section scroll-reveal">
-            <div class="section-header">
-                <h2 class="section-title">Projects</h2>
-                <div class="section-divider"></div>
-            </div>
-
-            <!-- Projects Filter Bar -->
-            <div class="projects-filter-bar scroll-reveal-item">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="iot">IoT & CV</button>
-                <button class="filter-btn" data-filter="web">Web & Full-Stack</button>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card scroll-reveal-item" data-category="iot">
-                    <div class="project-img-container">
-                        <!-- Project Icon illustration representation -->
-                        <div class="project-glow-accent"></div>
-                        <svg class="project-card-svg" viewBox="0 0 120 120" width="100%" height="100%">
-                            <circle cx="60" cy="60" r="45" fill="rgba(0, 242, 254, 0.05)"
-                                stroke="rgba(0, 242, 254, 0.15)" stroke-width="2" />
-                            <!-- Shopping cart icon -->
-                            <path d="M35 40h10l10 35h30l8-25H50" fill="none" stroke="#00f2fe" stroke-width="3"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <circle cx="58" cy="83" r="5" fill="#4facfe" />
-                            <circle cx="82" cy="83" r="5" fill="#4facfe" />
-                            <!-- AI Scanner wave lines -->
-                            <line x1="45" y1="50" x2="95" y2="50" stroke="#ff007f" stroke-width="2"
-                                stroke-linecap="round" opacity="0.8" class="scanner-laser" />
-                        </svg>
-                    </div>
-                    <div class="project-body">
-                        <div class="project-tags">
-                            <span>IoT</span>
-                            <span>AI / CV</span>
-                            <span>FastAPI</span>
-                            <span>Angular</span>
-                        </div>
-                        <h3 class="project-card-title">Smart Shopping Cart System (Cartify GnG)</h3>
-                        <p class="project-card-excerpt">
-                            An event-driven smart retail cart integrating Raspberry Pi, load cell sensors, and YOLOv8
-                            object detection for automatic item identification and billing.
+                <div class="about-info-container">
+                    <div class="about-info">
+                        <h3 class="about-subtitle print-hide">Professional Summary</h3>
+                        <p class="about-text">
+                            I am a dedicated Computer Science & Engineering graduate (2026) with a passion for designing
+                            and
+                            implementing full-stack software solutions. My experience ranges from crafting responsive
+                            client
+                            interfaces to architecting high-performance backend pipelines, working extensively with
+                            frameworks like <strong>FastAPI</strong>, <strong>Flask</strong>, and
+                            <strong>Angular</strong>.
                         </p>
-                        <button class="btn btn-card-details" data-project="cartify">
-                            <span>Explore Architecture</span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card scroll-reveal-item" data-category="web">
-                    <div class="project-img-container">
-                        <div class="project-glow-accent yellow-glow"></div>
-                        <svg class="project-card-svg" viewBox="0 0 120 120" width="100%" height="100%">
-                            <circle cx="60" cy="60" r="45" fill="rgba(127, 0, 255, 0.05)"
-                                stroke="rgba(127, 0, 255, 0.15)" stroke-width="2" />
-                            <!-- Smartphone app display -->
-                            <rect x="42" y="30" width="36" height="60" rx="6" fill="none" stroke="#7f00ff"
-                                stroke-width="3" />
-                            <line x1="50" y1="36" x2="70" y2="36" stroke="#e100ff" stroke-width="2"
-                                stroke-linecap="round" />
-                            <!-- Location pins -->
-                            <circle cx="60" cy="55" r="5" fill="#00f2fe" />
-                            <path d="M60 60v8" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <div class="project-body">
-                        <div class="project-tags">
-                            <span>Flask</span>
-                            <span>Firebase</span>
-                            <span>Sensor Fusion</span>
-                            <span>Web App</span>
-                        </div>
-                        <h3 class="project-card-title">Grab & Go – Supermarket Assistant</h3>
-                        <p class="project-card-excerpt">
-                            Real-time smart retail web application featuring live shopping list synchronization,
-                            location-based navigation, and multi-modal sensor fusion.
+                        <p class="about-text">
+                            I enjoy working at the intersection of web technology and the physical world—having
+                            successfully
+                            implemented IoT systems powered by Raspberry Pi, loaded with Computer Vision models (YOLOv8)
+                            and
+                            weight sensors to automate supermarket shopping workflows.
                         </p>
-                        <button class="btn btn-card-details" data-project="grabngo">
-                            <span>Explore Architecture</span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
+
+                        <div class="languages-box">
+                            <span class="languages-title">Languages:</span>
+                            <div class="languages-list">
+                                <span class="lang-badge">English (Professional)</span>
+                                <span class="lang-badge">Malayalam (Native)</span>
+                                <span class="lang-badge">Hindi (Conversational)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="education-section scroll-reveal">
+                <div class="section-header">
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="education-container-wrapper">
+                    <div class="education-container">
+                        <div class="education-timeline">
+                            <div class="edu-card scroll-reveal-item">
+                                <div class="edu-dot"></div>
+                                <div class="edu-header">
+                                    <span class="edu-duration">2022 - 2026</span>
+                                    <h4 class="edu-degree">B.Tech in Computer Science and Engineering</h4>
+                                </div>
+                                <p class="edu-school">Ilahia College of Engineering and Technology</p>
+                                <p class="edu-score">CGPA: 7.25 / 10</p>
+                                <div class="edu-coursework">
+                                    <strong>Coursework:</strong> Data Structures & Algorithms, OOP, Operating Systems,
+                                    Computer Networks, Artificial Intelligence, Embedded Systems, Web Programming
+                                </div>
+                            </div>
+
+                            <div class="edu-card scroll-reveal-item">
+                                <div class="edu-dot"></div>
+                                <div class="edu-header">
+                                    <span class="edu-duration">2020 - 2022</span>
+                                    <h4 class="edu-degree">Higher Secondary School (XII)</h4>
+                                </div>
+                                <p class="edu-school">VIJAYA HSS, Pulpally</p>
+                                <p class="edu-score">Score: 76%</p>
+                            </div>
+
+                            <div class="edu-card scroll-reveal-item">
+                                <div class="edu-dot"></div>
+                                <div class="edu-header">
+                                    <span class="edu-duration">2020</span>
+                                    <h4 class="edu-degree">Secondary Education (X)</h4>
+                                </div>
+                                <p class="edu-school">VIJAYA HSS, Pulpally</p>
+                                <p class="edu-score">Score: 94%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technical Skills Section -->
+            <section id="skills" class="skills-section scroll-reveal">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Print-only Skills Categories to match PDF layout exactly -->
+                <div class="skills-print-categories print-only">
+                    <div class="skills-print-cat">
+                        <h4 class="skills-print-cat-title">Languages</h4>
+                        <p class="skills-print-cat-list">Python, Java, C, C++</p>
+                    </div>
+                    <div class="skills-print-cat">
+                        <h4 class="skills-print-cat-title">Web & Backend</h4>
+                        <p class="skills-print-cat-list">Flask, FastAPI, HTML5, CSS3, JavaScript, Angular</p>
+                    </div>
+                    <div class="skills-print-cat">
+                        <h4 class="skills-print-cat-title">Databases</h4>
+                        <p class="skills-print-cat-list">MongoDB Atlas, Firebase (Firestore), NoSQL</p>
+                    </div>
+                    <div class="skills-print-cat">
+                        <h4 class="skills-print-cat-title">AI / Computer Vision</h4>
+                        <p class="skills-print-cat-list">YOLOv8, OpenCV (basic), Prompt Engineering (ChatGPT, Gemini,
+                            Copilot)</p>
+                    </div>
+                    <div class="skills-print-cat">
+                        <h4 class="skills-print-cat-title">Tools & Platforms</h4>
+                        <p class="skills-print-cat-list">Git, GitHub, VS Code, PyCharm, Raspberry Pi (IoT), Linux CLI,
+                            Excel</p>
+                    </div>
+                </div>
+
+                <div class="skills-marquee-container scroll-reveal-item">
+                    <!-- Row 1: Left scrolling -->
+                    <div class="skills-marquee-wrapper">
+                        <div class="skills-marquee-track">
+                            <!-- Card 1: Python -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#3776AB">
+                                        <path
+                                            d="M14.25.18c.9.2 1.66.76 2 1.56.4.85.38 1.8.38 2.76h-.85c-.9 0-1.62.73-1.62 1.62v1.54h3.1c1.02 0 1.9.7 2.1 1.7.27 1.34.2 2.74.2 4.1 0 1-.07 2-.72 2.8-.7.84-1.8.84-2.8.84h-1.34v-1.9c0-.9-.72-1.62-1.62-1.62H9.7v-2.7h4.1V9.7H9.7c-1 0-1.9-.7-2.1-1.7-.27-1.34-.2-2.74-.2-4.1 0-1 .07-2 .72-2.8C8.8.27 9.87.27 10.9.27h3.35zM9.7 14.3v2.7h4.1c1 0 1.9.7 2.1 1.7.27 1.34.2 2.74.2 4.1 0 1-.07 2-.72 2.8-.7.84-1.8.84-2.8.84h-3.3c-.9-.2-1.66-.76-2-1.56-.4-.85-.38-1.8-.38-2.76h.85c.9 0 1.62-.73 1.62-1.62v-1.54h-3.1c-1.02 0-1.9-.7-2.1-1.7-.27-1.34-.2-2.74-.2-4.1 0-1 .07-2 .72-2.8.7-.84 1.8-.84 2.8-.84H9.7z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">Python</span>
+                            </div>
+                            <!-- Card 2: Angular -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#dd0031">
+                                        <path
+                                            d="M12 2L2 5.5l1.5 13L12 22l8.5-3.5 1.5-13L12 2zM12 5l6.5 11.5h-2.2L12 9.7l-4.3 6.8H5.5L12 5z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">Angular</span>
+                            </div>
+                            <!-- Card 3: MongoDB -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#47A248">
+                                        <path
+                                            d="M12 2C11.5 4.5 9 8.5 9 12c0 2.5 1.5 5.5 3 7 1.5-1.5 3-4.5 3-7 0-3.5-2.5-7.5-3-10z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">MongoDB Atlas</span>
+                            </div>
+                            <!-- Card 4: Git -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#F05032">
+                                        <path
+                                            d="M20.6 10.4L13.6 3.4c-.8-.8-2-.8-2.8 0L9.4 4.8l2.9 2.9c.7-.2 1.5.1 2.1.7.6.6.8 1.4.6 2.1l2.9 2.9c.7-.2 1.5.1 2.1.7.8.8.8 2 0 2.8s-2 .8-2.8 0c-.6-.6-.8-1.4-.6-2.1L12 12.1v4.3c.2.2.3.5.3.8 0 .8-.5 1.5-1.3 1.7-.8.2-1.7-.3-1.9-1.1-.2-.8.3-1.7 1.1-1.9.3 0 .6 0 .8.2v-4.3l-2.7-2.7-5.9 5.9c-.8.8-.8 2 0 2.8l7 7c.8.8 2 .8 2.8 0l7.8-7.8c.8-.8.8-2 0-2.8z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">Git</span>
+                            </div>
+                            <!-- Card 5: HTML5 -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#E34F26">
+                                        <path
+                                            d="M3 2l1.6 17.8L12 22l7.4-2.2L21 2H3zm13.6 6h-6.2v2.4h6l-.5 5.2-3.9 1.1-3.9-1.1-.3-2.7h2.4l.1 1.2 1.7.5 1.7-.5.2-1.7H8.6l-.6-7.3h8.8l-.2 1.4z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">HTML5</span>
+                            </div>
+                            <!-- Card 6: Flask -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#c5c9d4">
+                                        <path
+                                            d="M19 19v-4.5c0-.9-.7-1.6-1.6-1.6H15V6c0-1.1-.9-2-2-2h-2c-1.1 0-2 .9-2 2v6.9H6.6c-.9 0-1.6.7-1.6 1.6V19c0 1.1.9 2 2 2h10.4c1.1 0 2-.9 2-2zM12 6h2v6.9h-2V6z"
+                                            fill="#f3f4f6" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">Flask</span>
+                            </div>
+                            <!-- Card 7: OpenCV -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="7" r="5" stroke="#E34F26" />
+                                        <circle cx="7" cy="16" r="5" stroke="#4CAF50" />
+                                        <circle cx="17" cy="16" r="5" stroke="#2196F3" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">OpenCV</span>
+                            </div>
+                            <!-- Card 8: VS Code -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#007ACC">
+                                        <path
+                                            d="M19.5 21L12 15l-4.5 4.5L3 18V6l4.5-1.5L12 9l7.5-6L21 4.5v15L19.5 21zM6 9.5v5l3.8-2.5L6 9.5z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">VS Code</span>
+                            </div>
+
+                            <!-- Duplicate items for infinite marquee loop -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#3776AB">
+                                        <path
+                                            d="M14.25.18c.9.2 1.66.76 2 1.56.4.85.38 1.8.38 2.76h-.85c-.9 0-1.62.73-1.62 1.62v1.54h3.1c1.02 0 1.9.7 2.1 1.7.27 1.34.2 2.74.2 4.1 0 1-.07 2-.72 2.8-.7.84-1.8.84-2.8.84h-1.34v-1.9c0-.9-.72-1.62-1.62-1.62H9.7v-2.7h4.1V9.7H9.7c-1 0-1.9-.7-2.1-1.7-.27-1.34-.2-2.74-.2-4.1 0-1 .07-2 .72-2.8C8.8.27 9.87.27 10.9.27h3.35zM9.7 14.3v2.7h4.1c1 0 1.9.7 2.1 1.7.27 1.34.2 2.74.2 4.1 0 1-.07 2-.72 2.8-.7.84-1.8.84-2.8.84h-3.3c-.9-.2-1.66-.76-2-1.56-.4-.85-.38-1.8-.38-2.76h.85c.9 0 1.62-.73 1.62-1.62v-1.54h-3.1c-1.02 0-1.9-.7-2.1-1.7-.27-1.34-.2-2.74-.2-4.1 0-1 .07-2 .72-2.8.7-.84 1.8-.84 2.8-.84H9.7z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">Python</span>
+                            </div>
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#dd0031">
+                                        <path
+                                            d="M12 2L2 5.5l1.5 13L12 22l8.5-3.5 1.5-13L12 2zM12 5l6.5 11.5h-2.2L12 9.7l-4.3 6.8H5.5L12 5z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">Angular</span>
+                            </div>
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#47A248">
+                                        <path
+                                            d="M12 2C11.5 4.5 9 8.5 9 12c0 2.5 1.5 5.5 3 7 1.5-1.5 3-4.5 3-7 0-3.5-2.5-7.5-3-10z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">MongoDB Atlas</span>
+                            </div>
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#F05032">
+                                        <path
+                                            d="M20.6 10.4L13.6 3.4c-.8-.8-2-.8-2.8 0L9.4 4.8l2.9 2.9c.7-.2 1.5.1 2.1.7.6.6.8 1.4.6 2.1l2.9 2.9c.7-.2 1.5.1 2.1.7.8.8.8 2 0 2.8s-2 .8-2.8 0c-.6-.6-.8-1.4-.6-2.1L12 12.1v4.3c.2.2.3.5.3.8 0 .8-.5 1.5-1.3 1.7-.8.2-1.7-.3-1.9-1.1-.2-.8.3-1.7 1.1-1.9.3 0 .6 0 .8.2v-4.3l-2.7-2.7-5.9 5.9c-.8.8-.8 2 0 2.8l7 7c.8.8 2 .8 2.8 0l7.8-7.8c.8-.8.8-2 0-2.8z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">Git</span>
+                            </div>
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#E34F26">
+                                        <path
+                                            d="M3 2l1.6 17.8L12 22l7.4-2.2L21 2H3zm13.6 6h-6.2v2.4h6l-.5 5.2-3.9 1.1-3.9-1.1-.3-2.7h2.4l.1 1.2 1.7.5 1.7-.5.2-1.7H8.6l-.6-7.3h8.8l-.2 1.4z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">HTML5</span>
+                            </div>
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#c5c9d4">
+                                        <path
+                                            d="M19 19v-4.5c0-.9-.7-1.6-1.6-1.6H15V6c0-1.1-.9-2-2-2h-2c-1.1 0-2 .9-2 2v6.9H6.6c-.9 0-1.6.7-1.6 1.6V19c0 1.1.9 2 2 2h10.4c1.1 0 2-.9 2-2zM12 6h2v6.9h-2V6z"
+                                            fill="#f3f4f6" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">Flask</span>
+                            </div>
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="7" r="5" stroke="#E34F26" />
+                                        <circle cx="7" cy="16" r="5" stroke="#4CAF50" />
+                                        <circle cx="17" cy="16" r="5" stroke="#2196F3" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">OpenCV</span>
+                            </div>
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#007ACC">
+                                        <path
+                                            d="M19.5 21L12 15l-4.5 4.5L3 18V6l4.5-1.5L12 9l7.5-6L21 4.5v15L19.5 21zM6 9.5v5l3.8-2.5L6 9.5z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">VS Code</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Right scrolling -->
+                    <div class="skills-marquee-wrapper">
+                        <div class="skills-marquee-track-reverse">
+                            <!-- Card 1: Java -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#5382a1">
+                                        <path
+                                            d="M2 18.5c4.5 1.5 9 1.5 13.5 0 2-.5 4-1.5 5.5-3 .5-.5 1-1 1-1.5H3s-.5.5-1 1.5c0 1 0 2.5 0 3zM18 10c0-3.5-3-5.5-5.5-6.5C10 2.5 7 2.5 4.5 3.5 3 4 2 5.5 2 7c0 3.5 3 5.5 5.5 6.5s5.5.5 8-.5c1.5-.5 2.5-1.5 2.5-3z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">Java</span>
+                            </div>
+                            <!-- Card 2: FastAPI -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#009688">
+                                        <path d="M12 2L2 22h9l1-9h-6L17 2h-5z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">FastAPI</span>
+                            </div>
+                            <!-- Card 3: Firebase -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#FFCA28">
+                                        <path d="M12 2L3.5 18h17L12 2zm0 4.5l5.5 10.5h-11L12 6.5z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">Firebase</span>
+                            </div>
+                            <!-- Card 4: GitHub -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#f3f4f6">
+                                        <path
+                                            d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.8 2.8 1.3 3.5 1a3.4 3.4 0 0 1 1-2.1c-2.7-.3-5.5-1.3-5.5-6a4.7 4.7 0 0 1 1.2-3.2 4.4 4.4 0 0 1 .1-3.2s1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2a4.4 4.4 0 0 1 .1 3.2 4.7 4.7 0 0 1 1.2 3.2c0 4.6-2.8 5.6-5.5 5.9a2.9 2.9 0 0 1 .8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">GitHub</span>
+                            </div>
+                            <!-- Card 5: CSS3 -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#1572B6">
+                                        <path
+                                            d="M3 2l1.6 17.8L12 22l7.4-2.2L21 2H3zm13.6 6h-6.2v2.4h6l-.5 5.2-3.9 1.1-3.9-1.1-.3-2.7h2.4l.1 1.2 1.7.5 1.7-.5.2-1.7H8.6l-.6-7.3h8.8l-.2 1.4z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">CSS3</span>
+                            </div>
+                            <!-- Card 6: YOLOv8 -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#FF007F"
+                                        stroke-width="2.5">
+                                        <circle cx="12" cy="12" r="9" />
+                                        <path d="M12 8v8M8 12h8" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">YOLOv8</span>
+                            </div>
+                            <!-- Card 7: Raspberry Pi -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#C51A4A">
+                                        <path
+                                            d="M12 2C8.5 2 5.5 4.5 5.5 8c0 1.2.4 2.3 1 3.2-.5.5-1 1-1.3 1.7-.6 1.1-.9 2.4-.9 3.8 0 4.1 3.5 7.3 7.7 7.3s7.7-3.2 7.7-7.3c0-1.4-.3-2.7-.9-3.8-.3-.7-.8-1.2-1.3-1.7.6-.9 1-2 1-3.2 0-3.5-3-6-6.5-6zm0 3c1.9 0 3.5 1.3 3.5 3S13.9 11 12 11s-3.5-1.3-3.5-3 1.6-3 3.5-3z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">Raspberry Pi</span>
+                            </div>
+                            <!-- Card 8: C++ -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#00599C">
+                                        <path
+                                            d="M2 12C2 6.5 6.5 2 12 2s10 4.5 10 10-4.5 10-10 10S2 17.5 2 12zm13-1h-2V9h-2v2H9v2h2v2h2v-2h2v-2z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">C / C++</span>
+                            </div>
+
+                            <!-- Duplicate items for infinite marquee loop -->
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#5382a1">
+                                        <path
+                                            d="M2 18.5c4.5 1.5 9 1.5 13.5 0 2-.5 4-1.5 5.5-3 .5-.5 1-1 1-1.5H3s-.5.5-1 1.5c0 1 0 2.5 0 3zM18 10c0-3.5-3-5.5-5.5-6.5C10 2.5 7 2.5 4.5 3.5 3 4 2 5.5 2 7c0 3.5 3 5.5 5.5 6.5s5.5.5 8-.5c1.5-.5 2.5-1.5 2.5-3z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">Java</span>
+                            </div>
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#009688">
+                                        <path d="M12 2L2 22h9l1-9h-6L17 2h-5z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">FastAPI</span>
+                            </div>
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#FFCA28">
+                                        <path d="M12 2L3.5 18h17L12 2zm0 4.5l5.5 10.5h-11L12 6.5z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">Firebase</span>
+                            </div>
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#f3f4f6">
+                                        <path
+                                            d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.8 2.8 1.3 3.5 1a3.4 3.4 0 0 1 1-2.1c-2.7-.3-5.5-1.3-5.5-6a4.7 4.7 0 0 1 1.2-3.2 4.4 4.4 0 0 1 .1-3.2s1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2a4.4 4.4 0 0 1 .1 3.2 4.7 4.7 0 0 1 1.2 3.2c0 4.6-2.8 5.6-5.5 5.9a2.9 2.9 0 0 1 .8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">GitHub</span>
+                            </div>
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#1572B6">
+                                        <path
+                                            d="M3 2l1.6 17.8L12 22l7.4-2.2L21 2H3zm13.6 6h-6.2v2.4h6l-.5 5.2-3.9 1.1-3.9-1.1-.3-2.7h2.4l.1 1.2 1.7.5 1.7-.5.2-1.7H8.6l-.6-7.3h8.8l-.2 1.4z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">CSS3</span>
+                            </div>
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#FF007F"
+                                        stroke-width="2.5">
+                                        <circle cx="12" cy="12" r="9" />
+                                        <path d="M12 8v8M8 12h8" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">YOLOv8</span>
+                            </div>
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#C51A4A">
+                                        <path
+                                            d="M12 2C8.5 2 5.5 4.5 5.5 8c0 1.2.4 2.3 1 3.2-.5.5-1 1-1.3 1.7-.6 1.1-.9 2.4-.9 3.8 0 4.1 3.5 7.3 7.7 7.3s7.7-3.2 7.7-7.3c0-1.4-.3-2.7-.9-3.8-.3-.7-.8-1.2-1.3-1.7.6-.9 1-2 1-3.2 0-3.5-3-6-6.5-6zm0 3c1.9 0 3.5 1.3 3.5 3S13.9 11 12 11s-3.5-1.3-3.5-3 1.6-3 3.5-3z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">Raspberry Pi</span>
+                            </div>
+                            <div class="skill-logo-card">
+                                <div class="skill-logo-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#00599C">
+                                        <path
+                                            d="M2 12C2 6.5 6.5 2 12 2s10 4.5 10 10-4.5 10-10 10S2 17.5 2 12zm13-1h-2V9h-2v2H9v2h2v2h2v-2h2v-2z" />
+                                    </svg>
+                                </div>
+                                <span class="skill-logo-name">C / C++</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Work Experience Section -->
+            <section id="experience" class="experience-section scroll-reveal">
+                <div class="section-header">
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="experience-timeline-container">
+                    <div class="exp-timeline-item">
+                        <div class="exp-badge">Internship</div>
+                        <div class="exp-details-card scroll-reveal-item">
+                            <div class="exp-header">
+                                <div>
+                                    <h3 class="exp-title">Front-End Development Intern</h3>
+                                    <a href="#" class="exp-company">NeST Digital Academy</a>
+                                </div>
+                                <div class="exp-date-loc">
+                                    <span class="exp-date">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        Mar 2025 – Apr 2025
+                                    </span>
+                                    <span class="exp-loc">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                        Kochi, Kerala
+                                    </span>
+                                </div>
+                            </div>
+                            <ul class="exp-bullets">
+                                <li>Developed responsive, component-based web interfaces using HTML5, CSS3, JavaScript,
+                                    and
+                                    Angular, applying data binding and modular architecture patterns.</li>
+                                <li>Practiced collaborative version control with Git and GitHub in a multi-developer
+                                    team
+                                    environment, successfully resolving merge conflicts and maintaining clean commit
+                                    histories.</li>
+                                <li>Gained practical exposure to Agile software development workflows, sprint planning,
+                                    and
+                                    professional software delivery standards.</li>
+                            </ul>
+                            <div class="exp-tech-tags">
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Git & GitHub</span>
+                                <span class="tech-tag">Agile Workflows</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects-section scroll-reveal">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Projects Filter Bar -->
+                <div class="projects-filter-bar scroll-reveal-item">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="iot">IoT & CV</button>
+                    <button class="filter-btn" data-filter="web">Web & Full-Stack</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card scroll-reveal-item" data-category="iot">
+                        <div class="project-img-container">
+                            <!-- Project Icon illustration representation -->
+                            <div class="project-glow-accent"></div>
+                            <svg class="project-card-svg" viewBox="0 0 120 120" width="100%" height="100%">
+                                <circle cx="60" cy="60" r="45" fill="rgba(191, 240, 152, 0.05)"
+                                    stroke="rgba(191, 240, 152, 0.15)" stroke-width="2" />
+                                <!-- Shopping cart icon -->
+                                <path d="M35 40h10l10 35h30l8-25H50" fill="none" stroke="#BFF098" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="58" cy="83" r="5" fill="#6FD6FF" />
+                                <circle cx="82" cy="83" r="5" fill="#6FD6FF" />
+                                <!-- AI Scanner wave lines -->
+                                <line x1="45" y1="50" x2="95" y2="50" stroke="#6FD6FF" stroke-width="2"
+                                    stroke-linecap="round" opacity="0.8" class="scanner-laser" />
                             </svg>
-                        </button>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>IoT</span>
+                                <span>AI / CV</span>
+                                <span>FastAPI</span>
+                                <span>Angular</span>
+                            </div>
+                            <h3 class="project-card-title">Smart Shopping Cart System (Cartify GnG)</h3>
+                            <p class="project-card-excerpt">
+                                An event-driven smart retail cart integrating Raspberry Pi, load cell sensors, and
+                                YOLOv8
+                                object detection for automatic item identification and billing.
+                            </p>
+                            <ul class="project-print-bullets print-only">
+                                <li>Architected an event-driven smart cart system using Raspberry Pi, YOLOv8 object
+                                    detection, and load cell sensors for automated item identification and billing.</li>
+                                <li>Designed a REST API backend (FastAPI + MongoDB Atlas) to handle real-time cart
+                                    events, item verification, dynamic pricing logic, and user-cart synchronisation.
+                                </li>
+                                <li>Built an Angular front-end dashboard consuming the REST API to display live cart
+                                    state, item additions, and billing summaries.</li>
+                            </ul>
+                            <button class="btn btn-card-details" data-project="cartify">
+                                <span>Explore Architecture</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Certifications & Achievements Section -->
-        <section id="certifications" class="certifications-section scroll-reveal">
-            <div class="section-header">
-                <h2 class="section-title">Certifications & Achievements</h2>
-                <div class="section-divider"></div>
-            </div>
+                    <!-- Project 2 -->
+                    <div class="project-card scroll-reveal-item" data-category="web">
+                        <div class="project-img-container">
+                            <div class="project-glow-accent yellow-glow"></div>
+                            <svg class="project-card-svg" viewBox="0 0 120 120" width="100%" height="100%">
+                                <circle cx="60" cy="60" r="45" fill="rgba(191, 240, 152, 0.05)"
+                                    stroke="rgba(191, 240, 152, 0.15)" stroke-width="2" />
+                                <!-- Smartphone app display -->
+                                <rect x="42" y="30" width="36" height="60" rx="6" fill="none" stroke="#6FD6FF"
+                                    stroke-width="3" />
+                                <line x1="50" y1="36" x2="70" y2="36" stroke="#BFF098" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <!-- Location pins -->
+                                <circle cx="60" cy="55" r="5" fill="#BFF098" />
+                                <path d="M60 60v8" stroke="#BFF098" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>Flask</span>
+                                <span>Firebase</span>
+                                <span>Sensor Fusion</span>
+                                <span>Web App</span>
+                            </div>
+                            <h3 class="project-card-title">Grab & Go – Supermarket Assistant</h3>
+                            <p class="project-card-excerpt">
+                                Real-time smart retail web application featuring live shopping list synchronization,
+                                location-based navigation, and multi-modal sensor fusion.
+                            </p>
+                            <ul class="project-print-bullets print-only">
+                                <li>Co-developed a smart retail web application with real-time shopping lists,
+                                    location-based in-store guidance, and a live offers feed using Flask and Firebase
+                                    Firestore.</li>
+                                <li>Implemented multi-modal sensor fusion (computer vision + weight sensors) to improve
+                                    product detection reliability for fixed-weight and variable-weight items.</li>
+                                <li>Designed a RESTful Flask backend with Firestore integration, enabling real-time data
+                                    synchronisation across multiple client sessions.</li>
+                            </ul>
+                            <button class="btn btn-card-details" data-project="grabngo">
+                                <span>Explore Architecture</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <div class="certifications-grid">
-                <!-- Cert 1 -->
-                <div class="cert-card scroll-reveal-item">
-                    <div class="cert-icon-wrapper">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2">
-                            <circle cx="12" cy="8" r="7"></circle>
-                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-                        </svg>
+            <!-- Certifications & Achievements Section -->
+            <section id="certifications" class="certifications-section scroll-reveal">
+                <div class="section-header">
+                    <h2 class="section-title">Certifications & Achievements</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card scroll-reveal-item">
+                        <div class="cert-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00f2fe"
+                                stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <div class="cert-content">
+                            <h4>Front-End Development with Angular</h4>
+                            <p class="cert-issuer">NeST Digital Academy (Industry Immersion Program)</p>
+                            <span class="cert-tag-detail">Angular Components, Routing, & UI Design</span>
+                        </div>
                     </div>
-                    <div class="cert-content">
-                        <h4>Front-End Development with Angular</h4>
-                        <p class="cert-issuer">NeST Digital Academy (Industry Immersion Program)</p>
-                        <span class="cert-tag-detail">Angular Components, Routing, & UI Design</span>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card scroll-reveal-item">
+                        <div class="cert-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00f2fe"
+                                stroke-width="2">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                </path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <div class="cert-content">
+                            <h4>Introduction to Generative AI</h4>
+                            <p class="cert-issuer">Microsoft</p>
+                            <span class="cert-tag-detail">AI Models, Prompt Engineering, & Ethical Principles</span>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card scroll-reveal-item">
+                        <div class="cert-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00f2fe"
+                                stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <div class="cert-content">
+                            <h4>Programming in Java (NPTEL)</h4>
+                            <p class="cert-issuer">IIT Kharagpur (12-Week Course, Score: 66%)</p>
+                            <span class="cert-tag-detail">OOP, Multithreading, Exception Handling, File I/O</span>
+                        </div>
+                    </div>
+
+                    <!-- Cert 4 -->
+                    <div class="cert-card scroll-reveal-item">
+                        <div class="cert-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00f2fe"
+                                stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <div class="cert-content">
+                            <h4>Python 3 Bootcamp</h4>
+                            <p class="cert-issuer">Udemy</p>
+                            <span class="cert-tag-detail">Full-stack Python, Decorators, File Handling & Error
+                                Management</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Cert 2 -->
-                <div class="cert-card scroll-reveal-item">
-                    <div class="cert-icon-wrapper">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2">
-                            <path
-                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
-                            </path>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                        </svg>
-                    </div>
-                    <div class="cert-content">
-                        <h4>Introduction to Generative AI</h4>
-                        <p class="cert-issuer">Microsoft</p>
-                        <span class="cert-tag-detail">AI Models, Prompt Engineering, & Ethical Principles</span>
+                <!-- Print-only Languages Section -->
+                <div class="languages-print-block print-only">
+                    <h3 class="about-subtitle-print">Languages</h3>
+                    <div class="languages-list-print">
+                        <div>English (Professional)</div>
+                        <div>Malayalam (Native)</div>
+                        <div>Hindi (Conversational)</div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Cert 3 -->
-                <div class="cert-card scroll-reveal-item">
-                    <div class="cert-icon-wrapper">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                    </div>
-                    <div class="cert-content">
-                        <h4>Programming in Java (NPTEL)</h4>
-                        <p class="cert-issuer">IIT Kharagpur (12-Week Course, Score: 66%)</p>
-                        <span class="cert-tag-detail">OOP, Multithreading, Exception Handling, File I/O</span>
-                    </div>
+            <!-- Achievements & Activities Section -->
+            <section id="achievements" class="achievements-section scroll-reveal">
+                <div class="section-header">
+                    <h2 class="section-title">Achievements & Activities</h2>
+                    <div class="section-divider"></div>
                 </div>
+                <div class="achievements-content scroll-reveal-item">
+                    <ul class="achievements-list">
+                        <li>Participated in college-level hackathons and tech fests. Collaborated in team-based problem
+                            solving under severe time constraints, designing and prototyping software solutions
+                            end-to-end.</li>
+                    </ul>
+                </div>
+            </section>
 
-                <!-- Cert 4 -->
-                <div class="cert-card scroll-reveal-item">
-                    <div class="cert-icon-wrapper">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                    </div>
-                    <div class="cert-content">
-                        <h4>Python 3 Bootcamp</h4>
-                        <p class="cert-issuer">Udemy</p>
-                        <span class="cert-tag-detail">Full-stack Python, Decorators, File Handling & Error
-                            Management</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Achievement Section -->
-            <div class="achievement-banner">
-                <div class="achieve-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4facfe" stroke-width="2">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
-                        </path>
-                    </svg>
-                </div>
-                <div class="achieve-info">
-                    <h4>Hackathons & Problem Solving</h4>
-                    <p>Participated in college-level hackathons and tech fests. Collaborated in team-based problem
-                        solving under severe time constraints, designing and prototyping software solutions end-to-end.
-                    </p>
-                </div>
-            </div>
-        </section>
+            <!-- Close Print Layout Wrapper -->
+        </div>
 
         <!-- Contact Section -->
         <section id="contact" class="contact-section scroll-reveal">
@@ -777,11 +964,11 @@
                     <form id="portfolio-contact-form" class="contact-form">
                         <div class="form-group">
                             <label for="form-name">Name</label>
-                            <input type="text" id="form-name" placeholder="John Doe" required>
+                            <input type="text" id="form-name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
                             <label for="form-email">Email</label>
-                            <input type="email" id="form-email" placeholder="john@example.com" required>
+                            <input type="email" id="form-email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
                             <label for="form-subject">Subject</label>
