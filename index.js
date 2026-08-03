@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Backend Developer',
         'Systems Integrator'
     ];
-    
+
     let professionIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
        SCROLL REVEAL & INTERSECT ENGINE
        ========================================================================== */
     const scrollRevealItems = document.querySelectorAll('.scroll-reveal, .scroll-reveal-item');
-    
+
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -252,27 +252,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 method: 'POST',
                 body: formData
             })
-            .then(async (response) => {
-                const json = await response.json();
-                if (response.status === 200) {
-                    // Show Success Modal
-                    openModal('modal-success');
-                    // Reset form fields
-                    contactForm.reset();
-                } else {
-                    console.error(json);
-                    alert(json.message || "Failed to send message. Please check your access key.");
-                }
-            })
-            .catch(error => {
-                console.error(error);
-                alert("Form submission failed due to a network error. Please try again.");
-            })
-            .finally(() => {
-                // Restore button state
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalText;
-            });
+                .then(async (response) => {
+                    const json = await response.json();
+                    if (response.status === 200) {
+                        // Show Success Modal
+                        openModal('modal-success');
+                        // Reset form fields
+                        contactForm.reset();
+                    } else {
+                        console.error(json);
+                        alert(json.message || "Failed to send message. Please check your access key.");
+                    }
+                })
+                .catch(error => {
+                    console.error(error);
+                    alert("Form submission failed due to a network error. Please try again.");
+                })
+                .finally(() => {
+                    // Restore button state
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+                });
         });
     }
 
@@ -282,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mouseGlow = document.getElementById('mouseGlow');
     const customCursor = document.getElementById('customCursor');
     const cursorFollower = document.getElementById('cursorFollower');
-    
+
     // Mouse Tracking (Custom Cursor & Glow Spotlight)
     if (customCursor && cursorFollower) {
         // Set initial visibility
@@ -301,14 +301,14 @@ document.addEventListener('DOMContentLoaded', () => {
             // Positioning elements
             customCursor.style.left = `${e.clientX}px`;
             customCursor.style.top = `${e.clientY}px`;
-            
+
             cursorFollower.style.left = `${e.clientX}px`;
             cursorFollower.style.top = `${e.clientY}px`;
 
             if (mouseGlow) {
                 mouseGlow.style.opacity = '1';
                 mouseGlow.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`;
-                
+
                 // Calculate velocity to splash scale the backlight!
                 const now = Date.now();
                 const dt = now - lastTime;
@@ -316,12 +316,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     const dx = e.clientX - lastX;
                     const dy = e.clientY - lastY;
                     const speed = Math.sqrt(dx * dx + dy * dy) / dt;
-                    
+
                     // Base size 250px up to 420px splash on high velocity
                     const size = Math.min(250 + speed * 120, 420);
                     mouseGlow.style.width = `${size}px`;
                     mouseGlow.style.height = `${size}px`;
-                    
+
                     lastX = e.clientX;
                     lastY = e.clientY;
                     lastTime = now;
@@ -340,20 +340,20 @@ document.addEventListener('DOMContentLoaded', () => {
             for (let i = 0; i < 8; i++) {
                 const spark = document.createElement('div');
                 spark.className = 'click-spark';
-                
+
                 // Even distribution around the click point with slight randomness
                 const angle = (i / 8) * Math.PI * 2 + (Math.random() - 0.5) * 0.4;
                 const distance = 30 + Math.random() * 45;
                 const tx = Math.cos(angle) * distance;
                 const ty = Math.sin(angle) * distance;
-                
+
                 spark.style.setProperty('--tx', `${tx}px`);
                 spark.style.setProperty('--ty', `${ty}px`);
                 spark.style.left = `${e.clientX}px`;
                 spark.style.top = `${e.clientY}px`;
-                
+
                 document.body.appendChild(spark);
-                
+
                 // Remove the element after animation ends
                 setTimeout(() => {
                     spark.remove();
@@ -372,7 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 300);
             }
         });
-        
+
         window.addEventListener('mouseleave', () => {
             customCursor.style.opacity = '0';
             cursorFollower.style.opacity = '0';
@@ -397,26 +397,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3D Card Hover Tilt Effects (Smooth and Lag-Free)
     const tiltCards = document.querySelectorAll('.project-card, .skill-logo-card');
-    
+
     tiltCards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left; // Mouse relative X inside card
             const y = e.clientY - rect.top;  // Mouse relative Y inside card
-            
+
             const centerX = rect.width / 2;
             const centerY = rect.height / 2;
-            
+
             // Calculate offsets scaled to max ~10 degrees rotation
             const rotateX = ((centerY - y) / centerY) * 10;
             const rotateY = ((x - centerX) / centerX) * 10;
-            
+
             // Disable transition during active movement to prevent jitter/lag
             card.style.transition = 'none';
             // Apply rotation and subtle lift/scale
             card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px) scale(1.02)`;
         });
-        
+
         card.addEventListener('mouseleave', () => {
             // Restore smooth transition to return to original state
             card.style.transition = 'transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)';
@@ -449,28 +449,28 @@ document.addEventListener('DOMContentLoaded', () => {
   <span class="term-highlight">contact</span>  - Email, Phone and social coordinates
   <span class="term-highlight">clear</span>    - Clear terminal logs
   <span class="term-highlight">print</span>    - Download PDF Resume`,
-            
+
             about: `Athil Hisham - Software Developer
 B.Tech Graduate in Computer Science & Engineering.
 Specialized in writing clean Python APIs, backend systems, full-stack Angular applications, computer vision models, and IoT prototypes.`,
-            
+
             skills: `Technical Skills:
   • Languages: Python (90%), Java (75%), C/C++ (70%)
   • Web & Backend: FastAPI, Flask, REST APIs, HTML5, CSS3, JS, Angular
   • Databases & Cloud: MongoDB Atlas, Firebase Firestore
   • AI & CV: YOLOv8, OpenCV
   • Embedded & Tools: Raspberry Pi, Git, GitHub`,
-            
+
             projects: `Key Projects:
   1. <span class="term-highlight">Cartify GnG</span> - Smart shopping cart system integrated with Raspberry Pi, load cells, and a YOLOv8 AI object scanner for automated checkout.
   2. <span class="term-highlight">Grab & Go</span> - Supermarket assistant web app with real-time synchronized shopping lists and pathfinding.`,
-            
+
             contact: `Get In Touch:
   • Email: athilhishamcym@gmail.com
   • Phone: +91 8943544897
   • GitHub: github.com/OxxY-ScoobY
   • LinkedIn: linkedin.com/in/athil-hisham`,
-            
+
             print: `Downloading PDF Resume...`
         };
 
@@ -560,7 +560,7 @@ Specialized in writing clean Python APIs, backend systems, full-stack Angular ap
         const originalText = element.textContent.trim();
         element.textContent = '';
         let index = 0;
-        
+
         const typeChar = () => {
             if (index < originalText.length) {
                 element.textContent += originalText.charAt(index);
@@ -595,7 +595,7 @@ Specialized in writing clean Python APIs, backend systems, full-stack Angular ap
 
     const handleScrollEffects = () => {
         const scrollY = window.scrollY;
-        
+
         // Update Scroll Progress Bar
         if (scrollProgress) {
             const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
