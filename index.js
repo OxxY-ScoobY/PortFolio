@@ -219,14 +219,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const submitBtn = contactForm.querySelector('.btn-submit');
             const originalText = submitBtn.innerHTML;
 
-            // Simple submission UX (Simulate sending)
+            // Update button UI to loading state
             submitBtn.disabled = true;
             submitBtn.innerHTML = `
                 <span>Sending...</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spinning-icon"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle><path d="M4 12a8 8 0 0 1 8-8"></path></svg>
             `;
 
-            // CSS Spinner styling inject to body head temporarily if not defined
+            // CSS Spinner styling injected if not defined
             if (!document.getElementById('spin-keyframes')) {
                 const style = document.createElement('style');
                 style.id = 'spin-keyframes';
@@ -245,17 +245,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.head.appendChild(style);
             }
 
-            setTimeout(() => {
-                // Success trigger
+            // Real submission via Web3Forms API
+            const formData = new FormData(contactForm);
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            })
+            .then(async (response) => {
+                const json = await response.json();
+                if (response.status === 200) {
+                    // Show Success Modal
+                    openModal('modal-success');
+                    // Reset form fields
+                    contactForm.reset();
+                } else {
+                    console.error(json);
+                    alert(json.message || "Failed to send message. Please check your access key.");
+                }
+            })
+            .catch(error => {
+                console.error(error);
+                alert("Form submission failed due to a network error. Please try again.");
+            })
+            .finally(() => {
+                // Restore button state
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = originalText;
-                
-                // Show Success Modal
-                openModal('modal-success');
-                
-                // Reset form fields
-                contactForm.reset();
-            }, 1200);
+            });
         });
     }
 

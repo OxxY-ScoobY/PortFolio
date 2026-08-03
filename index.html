@@ -965,21 +965,24 @@
 
                 <div class="contact-form-wrapper scroll-reveal-item">
                     <form id="portfolio-contact-form" class="contact-form">
+                        <!-- Web3Forms Access Key (Get yours free from web3forms.com) -->
+                        <input type="hidden" name="access_key" value="31a7ce67-5ffa-42d1-bb05-c7967e464b59">
+
                         <div class="form-group">
                             <label for="form-name">Name</label>
-                            <input type="text" id="form-name" placeholder="Your Name" required>
+                            <input type="text" id="form-name" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
                             <label for="form-email">Email</label>
-                            <input type="email" id="form-email" placeholder="Your Email" required>
+                            <input type="email" id="form-email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
                             <label for="form-subject">Subject</label>
-                            <input type="text" id="form-subject" placeholder="Collaboration Inquiry" required>
+                            <input type="text" id="form-subject" name="subject" placeholder="Collaboration Inquiry" required>
                         </div>
                         <div class="form-group">
                             <label for="form-message">Message</label>
-                            <textarea id="form-message" rows="5" placeholder="Tell me about your project..."
+                            <textarea id="form-message" name="message" rows="5" placeholder="Tell me about your project..."
                                 required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-submit">
