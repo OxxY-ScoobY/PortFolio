@@ -76,7 +76,8 @@ export const SkillsBento: React.FC = () => {
                 key={idx}
                 className="bento-skill-pill"
                 initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: idx * 0.03 }}
                 whileHover={{ scale: 1.05 }}
               >

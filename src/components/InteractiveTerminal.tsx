@@ -13,7 +13,9 @@ export const InteractiveTerminal: React.FC = () => {
   const inputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (history.length > 0) {
+      bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
   }, [history]);
 
   const handleCommandSubmit = (e: React.FormEvent) => {
@@ -143,7 +145,6 @@ export const InteractiveTerminal: React.FC = () => {
               marginLeft: '8px'
             }}
             spellCheck={false}
-            autoFocus
           />
         </form>
         <div ref={bottomRef} />
