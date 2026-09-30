@@ -19,7 +19,7 @@ export const CustomCursor: React.FC = () => {
     let followerY = 0;
     let glowX = 0;
     let glowY = 0;
-    let animId: number;
+    let animId: number | null = null;
 
     const onMouseMove = (e: MouseEvent) => {
       mouseX = e.clientX;
@@ -36,6 +36,8 @@ export const CustomCursor: React.FC = () => {
       if (cursor) {
         cursor.style.transform = `translate3d(${mouseX - 5}px, ${mouseY - 5}px, 0)`;
       }
+
+      if (animId === null) animId = requestAnimationFrame(render);
     };
 
     const onMouseOver = (e: MouseEvent) => {
@@ -52,7 +54,7 @@ export const CustomCursor: React.FC = () => {
       if (follower) follower.classList.toggle('hovered', !!isInteractive);
     };
 
-    // RAF loop for smooth follower & glow — no React state involved
+    // Animate the follower only while it is catching up to the pointer.
     const render = () => {
       followerX += (mouseX - followerX) * 0.14;
       followerY += (mouseY - followerY) * 0.14;
@@ -67,41 +69,32 @@ export const CustomCursor: React.FC = () => {
         mouseGlow.style.transform = `translate3d(${glowX - 200}px, ${glowY - 200}px, 0)`;
       }
 
-      animId = requestAnimationFrame(render);
+      const stillMoving =
+        Math.abs(mouseX - followerX) > 0.1 ||
+        Math.abs(mouseY - followerY) > 0.1 ||
+        Math.abs(mouseX - glowX) > 0.1 ||
+        Math.abs(mouseY - glowY) > 0.1;
+      animId = stillMoving ? requestAnimationFrame(render) : null;
     };
 
-    // Scroll progress via RAF — smoothly interpolated
-    let targetProgress = 0;
-    let currentProgress = 0;
-
+    // Update progress only when scrolling instead of polling every frame.
     const onScroll = () => {
       const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
-      if (totalScroll > 0) {
-        targetProgress = (window.scrollY / totalScroll) * 100;
-      }
-    };
-
-    const renderProgress = () => {
-      // Smooth lerp towards target
-      currentProgress += (targetProgress - currentProgress) * 0.12;
-      if (progressBar) {
-        progressBar.style.width = `${currentProgress}%`;
-      }
-      requestAnimationFrame(renderProgress);
+      const progress = totalScroll > 0 ? (window.scrollY / totalScroll) * 100 : 0;
+      if (progressBar) progressBar.style.width = `${progress}%`;
     };
 
     window.addEventListener('mousemove', onMouseMove, { passive: true });
     window.addEventListener('mouseover', onMouseOver);
     window.addEventListener('scroll', onScroll, { passive: true });
 
-    render();
-    renderProgress();
+    onScroll();
 
     return () => {
       window.removeEventListener('mousemove', onMouseMove);
       window.removeEventListener('mouseover', onMouseOver);
       window.removeEventListener('scroll', onScroll);
-      cancelAnimationFrame(animId);
+      if (animId !== null) cancelAnimationFrame(animId);
     };
   }, []);
 

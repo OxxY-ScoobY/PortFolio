@@ -1,6 +1,5 @@
 import React from 'react';
 import { ThemeProvider } from './context/ThemeContext';
-import { InteractiveBackground } from './components/InteractiveBackground';
 import { CustomCursor } from './components/CustomCursor';
 import { Header } from './components/Header';
 import { HeroBento } from './components/HeroBento';
@@ -16,7 +15,6 @@ export const App: React.FC = () => {
     <ThemeProvider>
       <div className="portfolio-app">
         <CustomCursor />
-        <InteractiveBackground />
         <Header />
 
         <main className="bento-container">
