@@ -112,11 +112,18 @@ button, input, textarea { font: inherit; }
 .bento-card:has(.social-bento-grid) h3 { font: 500 .72rem var(--font-mono) !important; text-transform: uppercase; letter-spacing: .1em; }
 
 .skill-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 25px; }
-.skill-tab-btn { padding: 8px 12px; background: transparent; color: var(--text-muted); border: 1px solid var(--border-color); border-radius: 0; cursor: pointer; font: .72rem var(--font-mono); }
-.skill-tab-btn.active, .skill-tab-btn:hover { color: var(--bg-card); background: var(--secondary); }
-.skills-badge-grid { display: flex; flex-wrap: wrap; gap: 10px; }
-.bento-skill-pill { display: flex; gap: 8px; align-items: center; padding: 9px 12px; border-bottom: 2px solid var(--secondary); color: var(--text-main); font: .82rem var(--font-mono); }
-.bento-skill-pill:hover { background: var(--accent); }
+.skill-tab-btn { padding: 8px 12px; background: rgba(255,255,255,0.02); color: var(--text-muted); border: 1px solid var(--border-color); border-radius: 0; cursor: pointer; font: 500 .72rem var(--font-mono); letter-spacing: .04em; text-transform: none; transition: all 180ms ease; }
+.skill-tab-btn.active, .skill-tab-btn:hover { color: var(--bg-card); background: var(--secondary); box-shadow: 0 0 18px rgba(118, 201, 183, 0.28); }
+.skills-marquee-viewport { position: relative; overflow: hidden; width: 100%; padding: 4px 0 8px; }
+.skills-marquee-viewport::before,
+.skills-marquee-viewport::after { content: ''; position: absolute; top: 0; bottom: 0; width: 36px; z-index: 2; pointer-events: none; }
+.skills-marquee-viewport::before { left: 0; background: linear-gradient(90deg, var(--bg-card) 0%, rgba(248,246,240,0) 100%); }
+.skills-marquee-viewport::after { right: 0; background: linear-gradient(270deg, var(--bg-card) 0%, rgba(248,246,240,0) 100%); }
+.skills-marquee-track { display: flex; width: max-content; gap: 10px; padding: 8px 0; animation: skill-marquee 28s linear infinite; will-change: transform; }
+.skills-marquee-track:hover { animation-play-state: paused; }
+.marquee-item { flex: 0 0 auto; }
+.bento-skill-pill { display: flex; gap: 8px; align-items: center; padding: 9px 12px; border-bottom: 2px solid var(--secondary); color: var(--text-main); font: 500 .82rem var(--font-mono); white-space: nowrap; letter-spacing: .02em; text-shadow: 0 0 10px rgba(31, 111, 104, 0.08); }
+.bento-skill-pill:hover { background: rgba(255, 118, 88, 0.08); box-shadow: inset 0 -2px 0 rgba(30, 36, 32, 0.25); }
 .bento-timeline-item { padding: 0 0 24px 20px; border-left: 1px solid var(--primary); margin-bottom: 22px; }
 .bento-timeline-dot { left: -5px; width: 9px; height: 9px; border-radius: 0; background: var(--primary) !important; box-shadow: none !important; }
 .bento-timeline-date { color: var(--primary); font: .7rem var(--font-mono); text-transform: uppercase; }
@@ -144,6 +151,10 @@ button, input, textarea { font: inherit; }
 @keyframes editorial-reveal {
   from { opacity: 0; transform: translateY(28px) rotate(.6deg); }
   to { opacity: 1; transform: translateY(0) rotate(0); }
+}
+@keyframes skill-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 @keyframes paper-drift {
   from { background-position: 0 0; }

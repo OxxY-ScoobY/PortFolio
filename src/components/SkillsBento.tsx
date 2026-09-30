@@ -29,6 +29,8 @@ export const SkillsBento: React.FC = () => {
     return s.category === activeTab;
   });
 
+  const marqueeSkills = [...filteredSkills, ...filteredSkills];
+
   return (
     <section id="skills" className="bento-section">
       <h2 className="bento-section-title">
@@ -70,21 +72,23 @@ export const SkillsBento: React.FC = () => {
             </button>
           </div>
 
-          <div className="skills-badge-grid">
-            {filteredSkills.map((skill, idx) => (
-              <motion.div
-                key={idx}
-                className="bento-skill-pill"
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: idx * 0.03 }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <span>{skill.icon}</span>
-                <span>{skill.name}</span>
-              </motion.div>
-            ))}
+          <div className="skills-marquee-viewport">
+            <div className="skills-marquee-track">
+              {marqueeSkills.map((skill, idx) => (
+                <motion.div
+                  key={`${skill.name}-${idx}`}
+                  className="bento-skill-pill marquee-item"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: (idx % filteredSkills.length) * 0.03 }}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <span>{skill.icon}</span>
+                  <span>{skill.name}</span>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>
