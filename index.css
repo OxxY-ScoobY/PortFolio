@@ -470,6 +470,7 @@ section {
     letter-spacing: -0.5px;
     background: linear-gradient(135deg, var(--text-main) 30%, var(--secondary));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -517,6 +518,7 @@ section {
     letter-spacing: -1px;
     background: linear-gradient(135deg, #fff, var(--text-muted));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -536,6 +538,7 @@ section {
 .hero-subtitle-dynamic {
     background: linear-gradient(135deg, var(--primary), var(--accent));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0px 0px 30px rgba(0, 242, 254, 0.1);
 }
@@ -1959,6 +1962,7 @@ section {
         margin: 0 !important;
         padding: 0 !important;
         -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 
     main {
