@@ -45,14 +45,15 @@ export interface CertificationItem {
 
 export const PERSONAL_INFO = {
   name: "ATHIL HISHAM",
-  title: "Software Developer Portfolio",
+  title: "Software Developer | Python | Backend | Full-Stack",
   subtitles: [
-    "Full-Stack Developer",
+    "Software Developer",
     "Python Developer",
-    "Backend Developer",
-    "Systems Integrator"
+    "Backend Engineer",
+    "Full-Stack Developer",
+    "AI & Computer Vision Specialist"
   ],
-  bio: "B.Tech Computer Science & Engineering graduate with hands-on experience building robust full-stack and backend web applications using Python, Flask, FastAPI, and Angular. Specializing in building scalable REST APIs, integrating IoT, and deploying computer vision solutions.",
+  bio: "Software Developer and B.Tech Computer Science graduate (2026) with 2 production products shipped, 2 deployed full-stack projects, and 4 certifications, delivering full-stack and backend products with Python, Flask, FastAPI, Angular, REST APIs, MongoDB, and Firebase. Currently shipping features for a commercially launched ERP product and an AI-assisted security operations platform at MINTS Global.",
   contact: {
     email: "athilhishamcym@gmail.com",
     phone: "+91 8943544897",
@@ -72,24 +73,40 @@ export const EDUCATION_DATA: EducationItem[] = [
     duration: "2022 - 2026",
     degree: "B.Tech in Computer Science and Engineering",
     school: "Ilahia College of Engineering and Technology",
-    score: "CGPA: 7.25 / 10",
+    score: "CGPA: 7.25",
     coursework: "Data Structures & Algorithms, OOP, Operating Systems, Computer Networks, Artificial Intelligence, Embedded Systems, Web Programming"
   },
   {
-    duration: "2020 - 2022",
-    degree: "Higher Secondary School (XII)",
-    school: "VIJAYA HSS, Pulpally",
+    duration: "2022",
+    degree: "Higher Secondary (XII), Computer Science",
+    school: "Vijaya HSS, Pulpally",
     score: "Score: 76%"
   },
   {
     duration: "2020",
-    degree: "Secondary Education (X)",
-    school: "VIJAYA HSS, Pulpally",
+    degree: "Secondary (X)",
+    school: "Vijaya HSS, Pulpally",
     score: "Score: 94%"
   }
 ];
 
 export const EXPERIENCE_DATA: ExperienceItem[] = [
+  {
+    title: "Software Developer / Software Developer Intern",
+    company: "MINTS Global",
+    companyUrl: "#",
+    duration: "Jul 2026 – Present",
+    location: "Kochi, Kerala",
+    badge: "Production Engineering",
+    bullets: [
+      "Ship production features across 2 enterprise and security products, owning development, integration, and testing through to delivery.",
+      "Contributed to Mints ERP, helping take an internal solution to a commercially launched product used by external customers.",
+      "Contributed to ShieldDesk, an AI-assisted security operations platform enabling real-time incident investigation through controlled, auditable workflows.",
+      "Built the full admin section (1 of 2 modules) of an ERP task/kanban module in Next.js and Firebase in coordination with the employee-side developer.",
+      "Collaborated with a cross-functional team to integrate and validate features in iterative Agile cycles."
+    ],
+    techTags: ["Next.js", "Firebase", "Python", "FastAPI", "REST APIs", "Agile"]
+  },
   {
     title: "Front-End Development Intern",
     company: "NeST Digital Academy",
@@ -98,9 +115,9 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     location: "Kochi, Kerala",
     badge: "Internship",
     bullets: [
-      "Developed responsive, component-based web interfaces using HTML5, CSS3, JavaScript, and Angular, applying data binding and modular architecture patterns.",
-      "Practiced collaborative version control with Git and GitHub in a multi-developer team environment, successfully resolving merge conflicts and maintaining clean commit histories.",
-      "Gained practical exposure to Agile software development workflows, sprint planning, and professional software delivery standards."
+      "Built responsive, component-based interfaces with HTML5, CSS3, JavaScript, and Angular using data binding and modular design.",
+      "Delivered work in an Agile team using Git/GitHub for version control and collaborative review.",
+      "Gained practical exposure to professional UI development workflows, sprint planning, and collaborative engineering practices."
     ],
     techTags: ["Angular", "HTML5", "CSS3", "JavaScript", "Git & GitHub", "Agile Workflows"]
   }
@@ -111,12 +128,12 @@ export const PROJECTS_DATA: Project[] = [
     id: "cartify",
     title: "Smart Shopping Cart System (Cartify GnG)",
     category: "iot",
-    excerpt: "An event-driven smart retail cart integrating Raspberry Pi, load cell sensors, and YOLOv8 object detection for automatic item identification and billing.",
-    tags: ["IoT", "AI / CV", "FastAPI", "Angular"],
+    excerpt: "An event-driven smart retail cart integrating Raspberry Pi, load cell sensors, and YOLOv8 object detection for automated item identification and billing.",
+    tags: ["IoT", "AI / CV", "FastAPI", "Angular", "MongoDB"],
     bullets: [
-      "Architected an event-driven smart cart system using Raspberry Pi, YOLOv8 object detection, and load cell sensors for automated item identification and billing.",
-      "Designed a REST API backend (FastAPI + MongoDB Atlas) to handle real-time cart events, item verification, dynamic pricing logic, and user-cart synchronisation.",
-      "Built an Angular front-end dashboard consuming the REST API to display live cart state, item additions, and billing summaries."
+      "Automated item identification and billing end to end by fusing 2 inputs (YOLOv8 detection + load-cell weight) on Raspberry Pi.",
+      "Engineered a real-time FastAPI + MongoDB Atlas backend handling 4 core flows: cart events, item verification, dynamic pricing, and cart sync.",
+      "Delivered an Angular dashboard for live cart state and billing, deployed to Render with configured build commands and environment variables."
     ],
     architectureDetails: {
       subtitle: "System Architecture",
@@ -143,14 +160,14 @@ export const PROJECTS_DATA: Project[] = [
   },
   {
     id: "grabngo",
-    title: "Grab & Go – Supermarket Assistant",
+    title: "Grab & Go – Supermarket Assistant Web App",
     category: "web",
-    excerpt: "Real-time smart retail web application featuring live shopping list synchronization, location-based navigation, and multi-modal sensor fusion.",
+    excerpt: "Real-time smart retail web application with shopping lists, location-based in-store guidance, live offers, and sensor-fused product detection.",
     tags: ["Flask", "Firebase", "Sensor Fusion", "Web App"],
     bullets: [
-      "Co-developed a smart retail web application with real-time shopping lists, location-based in-store guidance, and a live offers feed using Flask and Firebase Firestore.",
-      "Implemented multi-modal sensor fusion (computer vision + weight sensors) to improve product detection reliability for fixed-weight and variable-weight items.",
-      "Designed a RESTful Flask backend with Firestore integration, enabling real-time data synchronisation across multiple client sessions."
+      "Co-developed a retail web app with real-time shopping lists, location-based in-store guidance, and a live offers feed.",
+      "Improved product detection reliability by fusing 2 sensor modalities (computer vision + weight).",
+      "Built a RESTful Flask backend on Firestore for real-time cross-session sync while following CI/CD deployment principles."
     ],
     architectureDetails: {
       subtitle: "System Architecture",
@@ -170,7 +187,7 @@ export const PROJECTS_DATA: Project[] = [
         }
       ]
     }
-  }
+  },
 ];
 
 export const SKILLS_ROW_1: SkillItem[] = [
@@ -181,7 +198,7 @@ export const SKILLS_ROW_1: SkillItem[] = [
   { name: "HTML5", color: "#E34F26" },
   { name: "Flask", color: "#c5c9d4" },
   { name: "OpenCV", color: "#2196F3" },
-  { name: "VS Code", color: "#007ACC" }
+  { name: "Next.js", color: "#000000" }
 ];
 
 export const SKILLS_ROW_2: SkillItem[] = [
@@ -198,7 +215,7 @@ export const SKILLS_ROW_2: SkillItem[] = [
 export const CERTIFICATIONS_DATA: CertificationItem[] = [
   {
     title: "Front-End Development with Angular",
-    issuer: "NeST Digital Academy (Industry Immersion Program)",
+    issuer: "NeST Digital Academy",
     detail: "Angular Components, Routing, & UI Design",
     iconType: "award"
   },
@@ -209,8 +226,8 @@ export const CERTIFICATIONS_DATA: CertificationItem[] = [
     iconType: "box"
   },
   {
-    title: "Programming in Java (NPTEL)",
-    issuer: "IIT Kharagpur (12-Week Course, Score: 66%)",
+    title: "Programming in Java",
+    issuer: "NPTEL (66%)",
     detail: "OOP, Multithreading, Exception Handling, File I/O",
     iconType: "shield"
   },
@@ -223,5 +240,7 @@ export const CERTIFICATIONS_DATA: CertificationItem[] = [
 ];
 
 export const ACHIEVEMENTS_DATA = [
-  "Participated in college-level hackathons and tech fests. Collaborated in team-based problem solving under severe time constraints, designing and prototyping software solutions end-to-end."
+  "Shipped production features across enterprise and security products at MINTS Global, helping take an ERP from internal prototype to commercial launch.",
+  "Built and deployed an end-to-end IoT + computer-vision retail system alongside a smart supermarket assistant web app.",
+  "Participated in college-level hackathons and technology events, collaborating in fast-paced team-based problem solving."
 ];
